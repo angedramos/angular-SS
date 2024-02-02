@@ -1,0 +1,19 @@
+<div class="container">
+    <h3>Edit product</h3>
+    <form  (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Title</label>
+            <input type="text"  class="form-control" id="title" [(ngModel)]="getProduct.title" name="title" required>
+        </div>
+
+        <div class="form-group">
+            <label>Price</label>
+            <input type="number" class="form-control" id="price" [(ngModel)]="getProduct.price" name="price" required>
+        </div>
+        <div class="buttons">
+            <button type="submit" class="btn btn-success mt-3">Edit Product</button>
+            <button type="submit" class="btn btn-danger mt-3" (click)="productList()">Back</button>
+        </div>
+
+    </form>
+</div>

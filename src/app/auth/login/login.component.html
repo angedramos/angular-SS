@@ -1,0 +1,15 @@
+<form (ngSubmit)="login()" autocomplete="new-password">
+<b><h1>Login</h1></b>
+
+    <div class="form-control">
+        <label for="username"><b>Username</b></label>
+        <input  type="text" id="username" [(ngModel)]="User.username" name="username">
+    </div>
+
+    <div class="form-control">
+        <label for="password"> <b>Password</b></label>
+        <input type="password" id="password" [(ngModel)]="User.password" name="password">
+    </div>
+
+    <button type="submit" class="btn btn-dark">Login &#8594;</button>
+</form>

@@ -1,0 +1,38 @@
+<div class="container">
+    <h3><b>Create Employee</b></h3>
+
+    <form (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+            <label>Title</label>
+            <input type="text" class="form-control" id="title" [(ngModel)]="product.title" name="title">
+        </div>
+
+        <div class="form-group">
+            <label>Price</label>
+            <input type="number" class="form-control" id="price" [(ngModel)]="product.price" name="price">
+        </div>
+
+        <div class="form-group">
+            <label>Description</label>
+            <input type="text" class="form-control" id="description" [(ngModel)]="product.description"
+                name="description">
+        </div>
+
+        <div class="form-group">
+            <label>CategoryNumber</label>
+            <input type="number" class="form-control" id="categoryId" [(ngModel)]="product.categoryId"
+                name="categoryId">
+        </div>
+
+        <div class="form-group">
+            <label>Image URL</label>
+            <input type="text" class="form-control" id="images" [(ngModel)]="product.images[0]" name="images">
+        </div>
+        <div class="buttons">
+            <button type="submit" class="btn btn-success mt-5">Add Product</button>
+            <button type="submit" class="btn btn-danger mt-5 ml-3" (click)="productList()">Back</button>
+        </div>
+
+    </form>
+</div>
